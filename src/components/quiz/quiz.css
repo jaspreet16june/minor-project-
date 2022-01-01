@@ -1,0 +1,75 @@
+.main {
+  width: 75%;
+  background-size: cover;
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  flex-direction: column;
+}
+.top {
+  height: 50%;
+  position: relative;
+}
+.bottom {
+  height: 50%;
+}
+.timer {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  bottom: 1rem;
+  left: 7rem;
+}
+.pyramid {
+    width: 23%;
+    height: 100%;
+    background-color: #020230;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0rem;
+}
+
+
+.moneyList {
+  padding: 20px;
+  list-style: none;
+  width: 100%;
+}
+
+.moneyListItem {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.moneyListItem.active {
+  background-color: teal;
+}
+
+.moneyListItemNumber {
+  width: 30%;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.moneyListItemAmount {
+  font-size: 20px;
+  font-weight: 600;
+}
+.endText{
+  position: relative;
+  top:0;
+  bottom: 0;
+  right:0;
+  left:0;
+  margin: auto;
+} 
