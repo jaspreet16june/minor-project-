@@ -16,7 +16,7 @@ const Navbar = ({
   return (
     <nav>
       <div
-        className='nav-brand'
+        className='nav-brand1'
         onClick={() =>
           (window.location =
             'https://en.wikipedia.org/wiki/Sorting#:~:text=Sorting%20is%20any%20process%20of,grouping%20items%20with%20similar%20properties.')

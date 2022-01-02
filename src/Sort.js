@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react'
 import "./app.css"
 import Navbar from './components/Navbar'
-import Front from './components/Front'
 import Bars from './components/Bars'
 import { BrowserRouter as Router, Routes, Route ,Link} from "react-router-dom";
 import Quiz from "./components/quiz/Quiz";

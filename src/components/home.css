@@ -1,0 +1,38 @@
+.btn {
+  margin: 3rem;
+}
+.container-fluid {
+  height: 2rem;
+}
+.mid {
+  background-image: url("https://media1.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif?cid=ecf05e47iv0rpz3ri7181unh7ki1vkkwgy9zlyu9w3ehrr1x&rid=giphy.gif&ct=g") ;
+  background-size: cover;
+  background-color: black;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.navbar-nav{
+        margin-left: 30rem;
+}
+
+.navbar-brand {
+
+    font-size: 2.25rem;
+    color:#0079c3;
+    font-weight: bold;
+}
+
+.come {
+    position: absolute;
+    left: 35rem;
+    bottom: 14rem;
+}
+.info{
+    margin-top:6rem;
+    font-weight: lighter;
+    font-family: azz LET, fantasy;
+}
