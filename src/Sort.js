@@ -132,15 +132,9 @@ const Sort = () => {
         <div className ="wayToQuiz">
         <div className="d-grid gap-2 col-6 mx-auto">
         <h3 className ="font">To check your understanding related to algorithms. Click the below button<ArrowDropDownIcon/></h3>
-         <button
-      type="submit" class="btn btn-primary"
-        onClick={() =>
-          (window.location =
-            'http://localhost:3001/')
-        }
-      >
-        Quiz 
-      </button>
+       
+       <Link to = "/quiz" type="submit" className="btn btn-dark">Quiz</Link>
+      
 
         </div>
       </div>

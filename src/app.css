@@ -1,8 +1,5 @@
 .app {
-  /* height: 100vh; */
-  /* display: flex; */
   color: white;
-  /* background:#292940; */
    overflow: hidden;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black),
     url("./assests/light-brown-texture-background-free-photo.jpg") center ;

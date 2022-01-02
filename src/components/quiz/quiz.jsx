@@ -35,7 +35,7 @@ const Quiz = () => {
       { id: 9, amount: "90 points" },
       { id: 10, amount: "100 points" },
     ].reverse();
-
+    
     useEffect(() => {
       questionNumber > 1 &&
         setEarned(moneyPyramid.find((m) => m.id === questionNumber - 1).amount);
@@ -43,7 +43,7 @@ const Quiz = () => {
 
 
   return (
-    <div>
+    <div className = "App">
       <div className="main">
         {stop ? (
           <h1 className="endText"> You earned: {earned}</h1>
