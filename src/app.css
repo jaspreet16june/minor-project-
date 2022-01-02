@@ -2,13 +2,19 @@
   /* height: 100vh; */
   /* display: flex; */
   color: white;
-  background:#292940;
+  /* background:#292940; */
    overflow: hidden;
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230),
-    url("../images/bg4.png") center ; */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black),
+    url("./assests/light-brown-texture-background-free-photo.jpg") center ;
   background-repeat: no-repeat;
 }
 .font{
       /* font-family: 'Brush Script MT', cursive; */
        font-family: Georgia, serif;
+}
+.wayToQuiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }

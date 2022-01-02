@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-
-import Trivia from "./components/Trivia";
+import "./quiz.css";
+import Trivia from "../quiz/Trivia";
 import axios from "axios";
-import Timer from "./components/Timer";
-const quiz = () => {
+import Timer from "../quiz/Timer"
+
+const Quiz = () => {
      const getAllQuestions = () => {
        axios.get("/api/quiz").then((res) => {
          console.log(res);
@@ -85,4 +86,4 @@ const quiz = () => {
   );
 };
 
-export default quiz;
+export default Quiz;

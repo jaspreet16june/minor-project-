@@ -5,9 +5,11 @@
   min-width: 90%;
   text-align: center;
 }
+.block{
 
+  background-color:#292940 ;
+}
 .listBlocks > .block {
-  background-color: turquoise;
   color: #282c34;
   display: inline-block;
   border-radius: 5px;

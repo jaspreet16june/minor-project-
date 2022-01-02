@@ -1,4 +1,4 @@
-import "./trivia.css"
+import "./trivia.css";
 
 import { useEffect, useState } from "react";
 
