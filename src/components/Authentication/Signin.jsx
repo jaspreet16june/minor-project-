@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import "./signin.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -16,10 +15,10 @@ const SignIn = () => {
   let userData = [];
 
   const handleSignin = async () => {
-    navigate("/sort");
+    navigate("/");
     try {
       let user = [];
-      user = await axios.post("/auth/login", {
+      user = await axios.post("/api/user/login", {
         email: email,
         password: password,
       });
@@ -31,12 +30,12 @@ const SignIn = () => {
 
   return (
     <div className="signin">
-      <Link to="/">
+      <Link to="/" className = "signin_logo">
        SORTING VISUALISER
       </Link>
       <div className="signin_container">
         <h1>Sign-in</h1>
-        <form>
+        
           <h5>E-mail</h5>
           <input
             type="text"
@@ -54,19 +53,15 @@ const SignIn = () => {
             className="sign_inButton"
             onClick={async () => {
               let user = await handleSignin()
-
+              userData.push(user.data.user);
+              // console.log(userData)
+              localStorage.setItem("logged user", JSON.stringify(userData));
               dispatch(userCreator(true));
             }}
           >
             Sign In
           </button>
-        </form>
-       
-        <Link to="/signup">
-          <button className="sign_inRegisterButton">
-            Create Your Account
-          </button>
-        </Link>
+      
       </div>
     </div>
   );

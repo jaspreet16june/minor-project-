@@ -14,7 +14,7 @@ const Navbar = ({
   algo,
 }) => {
   return (
-    <nav>
+    <navbar>
       <div
         className='nav-brand1'
         onClick={() =>
@@ -25,7 +25,7 @@ const Navbar = ({
         Sorting Visualizer
       </div>
 
-      <div className='toolbox'>
+      <div className='tool_box'>
         <div>
           <div className='group speed'>
             <label>Speed</label>
@@ -70,7 +70,7 @@ const Navbar = ({
           </button>
         </div>
       </div>
-    </nav>
+    </navbar>
   )
 }
 

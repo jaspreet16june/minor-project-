@@ -1,5 +1,5 @@
 // import React from "react";
-import "./signup.css";
+import "./signin.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
@@ -14,7 +14,7 @@ const SignUp = () => {
   const handleSignup = async () => {
     navigate("/signin");
     try {
-      await axios.post("/auth/signup", {
+      await axios.post("/api/user/signup", {
         name: name,
         email: email,
         password: password,
@@ -27,8 +27,8 @@ const SignUp = () => {
 
   return (
     <div className="signup">
-      <Link to="/">
-       Sorting VISUALISER
+      <Link to="/" className="signup_re">
+       SORTING VISUALISER
       </Link>
       <div className="signin_container">
         <h1>Sign-up</h1>
@@ -69,11 +69,11 @@ const SignUp = () => {
           >
             Sign up
           </button>
+         <Link to ="/" className="btn btn-primary">
+             Back
+         </Link>
         </form>
-        <p>
-          By signing-in you agree to the Alan Eats conditions. Please see our
-          Privacy Notice
-        </p>
+        
       </div>
     </div>
   );

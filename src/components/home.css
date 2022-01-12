@@ -5,7 +5,7 @@
   height: 2rem;
 }
 .mid {
-  background-image: url("https://media1.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif?cid=ecf05e47iv0rpz3ri7181unh7ki1vkkwgy9zlyu9w3ehrr1x&rid=giphy.gif&ct=g") ;
+  background-image: url("https://media1.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif?cid=ecf05e47iv0rpz3ri7181unh7ki1vkkwgy9zlyu9w3ehrr1x&rid=giphy.gif&ct=g");
   background-size: cover;
   background-color: black;
   height: 100vh;
@@ -15,24 +15,41 @@
   justify-content: center;
   text-align: center;
 }
-.navbar-nav{
-        margin-left: 30rem;
+.navbar-nav {
+  margin-left: 30rem;
 }
 
 .navbar-brand {
-
-    font-size: 2.25rem;
-    color:#0079c3;
-    font-weight: bold;
+  font-size: 2.25rem;
+  color: #0079c3;
+  font-weight: bold;
 }
 
 .come {
-    position: absolute;
-    left: 35rem;
-    bottom: 14rem;
+  position: absolute;
+  left: 35rem;
+  bottom: 14rem;
 }
-.info{
-    margin-top:6rem;
-    font-weight: lighter;
-    font-family: azz LET, fantasy;
+.info {
+  margin-top: 6rem;
+  font-weight: lighter;
+  font-family: azz LET, fantasy;
+}
+.loggedUser_info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left:10px ;
+}
+.logout_Btn {
+  border-radius: 6rem;
+  background-color: #0079c3;
+  color: aliceblue;
+
+}
+.loggedUser {
+  position: absolute;
+  display: flex;
+  right: 0;
+  width: 19rem;
 }
