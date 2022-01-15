@@ -15,7 +15,7 @@ const Home = () => {
 
   console.log(user);
   return (
-    <div>
+    <div classname ="Home">
       <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -46,13 +46,14 @@ const Home = () => {
               <div className="loggedUser">
                 <img className="user_logo" src={user[0].userImage} />
                 <div className="loggedUser_info">
-                  <h4>{user[0].name}</h4>
+                  <h4 className="name">{user[0].name}</h4>
                   <button
-                    type="submit" class="logout_Btn"
+                    type="submit"
+                    class="logout_Btn"
                     onClick={() => {
                       localStorage.removeItem("logged user");
                       dispatch(userCreator(false));
-          
+
                       navigate("/");
                     }}
                   >
@@ -66,18 +67,27 @@ const Home = () => {
       </nav>
 
       <div className=" mid">
-        <h3 className="info">
-          A Sorting Algorithm is used to rearrange a given array or list
-          elements according to a comparison operator on the elements. The
-          comparison operator is used to decide the new order of element in the
-          respective data structure.
-        </h3>
+        <img
+          src="https://assets.digitalocean.com/articles/alligator/js/bubble-selection-insertion-sort/o/selection-sort.gif"
+          alt="sorting gif"
+          className="Sorting"
+        />
+        {/* <img
+          src="https://elgorithmi.com/wp-content/uploads/2020/11/selection-sort-animation.gif"
+          alt="sorting gif"
+          className="Sorting1"
+        /> */}
 
-        {/* <h3>
-            For Understanding Sorting algorithms Go to the below Button:
-        </h3> */}
+        <h3 className="more">
+          Sorting is a very classic problem of reordering items (that can be
+          compared, e.g., integers, floating-point numbers, strings, etc) of an
+          array in a certain order, decreasing, non-increasing.
+        </h3>
+        <Link to="/Info" type="submit" class="btn btn-dark come1">
+          For more Sorting Algorithms understanding
+        </Link>
         <Link to="/sort" type="submit" class="btn btn-dark come">
-          Getting stated
+          Getting started
         </Link>
       </div>
     </div>

@@ -39,7 +39,7 @@ const SignIn = () => {
           <h5>E-mail</h5>
           <input
             type="text"
-            placeholder="your Email"
+            placeholder="Your Email"
             onChange={(e) => emailSet(e.target.value)}
           />
 

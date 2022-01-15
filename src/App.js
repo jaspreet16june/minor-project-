@@ -5,6 +5,7 @@ import Sort from "./Sort";
 import Home from "../src/components/Home"
 import Signup from "./components/Authentication/Signin"
 import Signin from "./components/Authentication/Signup"
+import Information from "./components/Authentication/Information"
 let App=()=> {
   
 
@@ -20,9 +21,11 @@ let App=()=> {
             </Route>
              <Route path="/quiz" element={<Quiz/>}  >
             </Route>
-             <Route path="/signup" element={<Signup/>}  >
+             <Route path="/signup" element={<Signin/>}  >
             </Route>
-            <Route path="/signin" element={<Signin/>}  >
+            <Route path="/signin" element={<Signup/>}  >
+            </Route>
+             <Route path="/info" element={<Information/>}  >
             </Route>
           </Routes>
       </Router>

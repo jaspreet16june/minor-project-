@@ -4,8 +4,11 @@
 .container-fluid {
   height: 2rem;
 }
+.Home{
+   overflow: hidden;
+}
 .mid {
-  background-image: url("https://media1.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif?cid=ecf05e47iv0rpz3ri7181unh7ki1vkkwgy9zlyu9w3ehrr1x&rid=giphy.gif&ct=g");
+  background-image: url("../assests/—Pngtree—data\ the\ internet\ cloud\ network_926213.jpg");
   background-size: cover;
   background-color: black;
   height: 100vh;
@@ -14,11 +17,15 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  /* flex-direction: column; */
 }
 .navbar-nav {
   margin-left: 30rem;
 }
-
+.navbar {
+  height: 5rem;
+   overflow: hidden;
+}
 .navbar-brand {
   font-size: 2.25rem;
   color: #0079c3;
@@ -27,8 +34,13 @@
 
 .come {
   position: absolute;
-  left: 35rem;
+  left: 36.5rem;
   bottom: 14rem;
+}
+.come1 {
+  position: absolute;
+  left: 30rem;
+  bottom: 20rem;
 }
 .info {
   margin-top: 6rem;
@@ -39,17 +51,42 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-left:10px ;
+  margin-left: 71px;
+  color: #0079c3;
+}
+.name {
+  margin: 6px;
 }
 .logout_Btn {
   border-radius: 6rem;
   background-color: #0079c3;
   color: aliceblue;
-
 }
 .loggedUser {
   position: absolute;
   display: flex;
   right: 0;
   width: 19rem;
+}
+.Sorting {
+  width: 19rem;
+  height: 14rem;
+  border-radius: 3rem;
+  position: absolute;
+  left: 34rem;
+  /* bottom: 1rem; */
+  bottom: 1rem;
+}
+.Sorting1 {
+  width: 19rem;
+  height: 14rem;
+  border-radius: 3rem;
+  position: absolute;
+  left: 8rem;
+  top: 0rem;
+}
+.more {
+  color: white;
+  /* font-weight: 800; */
+  font-family: cursive;
 }

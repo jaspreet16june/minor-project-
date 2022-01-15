@@ -1,5 +1,5 @@
 .signin {
-   background: url("../../assests/light-brown-texture-background-free-photo.jpg") center ;
+  background-image: url("../../assests/—Pngtree—data\ the\ internet\ cloud\ network_926213.jpg");
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,21 +12,22 @@
 .signup {
   background-color: white;
   height: 100vh;
-    background: url("../../assests/light-brown-texture-background-free-photo.jpg") center ;
+  background-image: url("../../assests/—Pngtree—data\ the\ internet\ cloud\ network_926213.jpg");
+  /* background-size: cover; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .signup_re{
   font-size: 3rem;
-  color:#292940;
+  color:white;
 }
 
 .signin_logo {
  font-size: 3rem;
  text-decoration: none;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color:midnightblue;
+  color:white;
 
   
 }
@@ -40,7 +41,7 @@
   text-align: center;
   border-radius: 5px;
   padding: 20px;
-  color:midnightblue;
+  color:white;
 }
 
 .signin_container > h1 {
